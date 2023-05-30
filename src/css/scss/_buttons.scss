@@ -10,7 +10,7 @@
   }
 
   table {
-    width: auto;
+    width: fit-content;
   }
 
   table td {
@@ -19,7 +19,7 @@
     text-align: center;
   }
 
-  a{
+  a {
     background-color: #ffffff;
     border: solid 1px $primary-color;
     border-radius: $btn-br;
@@ -27,22 +27,22 @@
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 0;
-    padding: 12px 25px;
+    padding: 20px 24px;
     text-decoration: none;
     text-transform: capitalize;
+    width: 214px;
   }
 }
 
 // Primary call to action button
 .btn-primary {
-
   table td {
     background-color: $primary-color;
   }
 
-  a{
+  a {
     background-color: $primary-color;
     border-color: $primary-color;
     color: #ffffff;
@@ -51,14 +51,24 @@
 
 // Secondary button
 .btn-secondary {
-
   table td {
     background-color: transparent;
   }
 
-  a{
+  a {
     background-color: transparent;
     border-color: $primary-color;
     color: $primary-color;
+  }
+}
+.btn-warn {
+  table td {
+    background-color: transparent;
+  }
+
+  a {
+    background-color: transparent;
+    border-color: $warn-color;
+    color: $warn-color;
   }
 }

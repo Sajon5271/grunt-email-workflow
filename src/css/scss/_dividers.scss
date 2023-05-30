@@ -10,10 +10,11 @@
   }
 
   td {
-    border-top: 1px solid $divider-color;
+    // border-top: 1px solid $divider-color;
+    background: $divider-color;
     line-height: 0;
     font-size: 0;
-    height: 1px;
+    height: 5px;
     margin: 0;
     padding: 0;
   }

@@ -1,10 +1,9 @@
 .preview-interface-view {
-  
   // Basic elements
   body {
     background: #fff;
     color: #333;
-    font: normal 14px/1.4 Helvetica, Arial, Sans-serif;
+    font: normal 16px/1.4 Helvetica, Arial, Sans-serif;
   }
   a {
     color: #000;
@@ -21,7 +20,7 @@
 
   // Header
   .header {
-    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     display: table;
     width: 100%;
     position: relative;
@@ -44,10 +43,10 @@
   .preview-ui--full,
   .preview-ui--mobile,
   .preview-ui--mobile__container {
-    transition: margin all $drawer-animation-duration linear, 
-                padding all $drawer-animation-duration linear, 
-                width all $drawer-animation-duration linear, 
-                opaciy all $drawer-animation-duration linear;
+    transition: margin all $drawer-animation-duration linear,
+      padding all $drawer-animation-duration linear,
+      width all $drawer-animation-duration linear,
+      opaciy all $drawer-animation-duration linear;
   }
 
   .preview-ui {
@@ -95,7 +94,7 @@
     height: 40px;
     z-index: 10;
   }
-  
+
   // Layout elemnts when mobile drawer is hidden
   .mobile-drawer-hidden {
     .preview-ui--full {
@@ -128,7 +127,7 @@
       }
     }
   }
-  
+
   // Drawer close toggle (x)
   .toggle-drawer-close {
     z-index: 1;
@@ -139,7 +138,7 @@
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       background: #fff;
       display: block;

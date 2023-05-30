@@ -2,9 +2,8 @@
     RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- */
 
-table[class=body]{
+table[class='body'] {
   @media only screen and (max-width: $width+40) {
-
     // Type
     h1,
     h2,
@@ -39,7 +38,7 @@ table[class=body]{
     // Buttons
     .btn table,
     .btn a {
-      width: 100% !important;
+      width: 75vw !important;
     }
   }
 }

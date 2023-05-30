@@ -1,0 +1,20 @@
+---
+layout: lunge.hbs
+subject: Account Confirmation
+---
+<span class="preheader">An Account has been created.</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Hello,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Welcome to Lunge Zürich. Your account creation request in the appointment
+      booking portal has been received. Please click the following button/link to confirm your account registration.
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td>{{>button type='primary' url=lunge.setPasswordLink title='Confirm Your Account Registration'}}</td>
+  </tr>
+</table>

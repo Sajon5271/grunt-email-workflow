@@ -1,0 +1,51 @@
+---
+layout: lunge.hbs
+subject: Booking Cancelled
+---
+<span class="preheader">Your booking has been cancelled</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Your booking at Lunge Zurich with the following details has been cancelled:
+    </td>
+  </tr>
+</table>
+<table class="table-padding fit-content info-table">
+  <tr>
+    <td class="bold-400 medium-emphasis">Patient name</td>
+    <td class="bold-700 info-color">{{lunge.patientName}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Category of Consultation</td>
+    <td class="bold-700 info-color">{{lunge.consultationCategory}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Service</td>
+    <td class="bold-700 info-color">{{lunge.serviceName}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Location</td>
+    <td class="bold-700 info-color">{{lunge.location}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Date</td>
+    <td class="bold-700 info-color">{{lunge.appointmentDate}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Time</td>
+    <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
+  </tr>
+</table>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500 justify-text">If you want a new slot to be allocated to you automatically, please click <span class="bold-700">Yes</span>. If you don't want another slot to be allocated for you, please click <span class="bold-700">No</span></td>
+  </tr>
+</table>
+<table class="table-padding shrunk-font-size fit-content align-center">
+  <tr class="action-buttons no-wrap-text align-center">
+    <td> {{> button type='primary' url=lunge.autoRescheduleAppointment title='Yes'}}</td>
+    <td> {{> button type='secondary' url=lunge.appointmentCacellationReasonEndpoint title='No'}}</td>
+  </tr>
+</table>
