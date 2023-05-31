@@ -1,5 +1,6 @@
 username: '{{username}}'
 firstname: '{{firstname}}'
+name: '{{name}}'
 patientName: '{{patientName}}'
 consultationCategory: '{{consultationCategory}}'
 serviceName: '{{serviceName}}'
@@ -13,3 +14,4 @@ setPasswordLink: '{{setPasswordLink}}'
 
 autoRescheduleAppointment: '{{autoRescheduleAppointment}}'
 appointmentCacellationReasonEndpoint: '{{appointmentCacellationReasonEndpoint}}'
+passwordResetLink: '{{passwordResetLink}}'
