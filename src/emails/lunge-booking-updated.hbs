@@ -1,0 +1,56 @@
+---
+layout: lunge.hbs
+subject: Booking Updated
+---
+<span class="preheader">Your appointment has been updated.</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Your booking at Lunge Zürich has been updated with the following details:
+    </td>
+  </tr>
+</table>
+<table class="table-padding fit-content info-table">
+  <tr>
+    <td class="bold-400 medium-emphasis">Patient name</td>
+    <td class="bold-700 info-color">{{lunge.patientName}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Category of Consultation</td>
+    <td class="bold-700 info-color">{{lunge.consultationCategory}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Service</td>
+    <td class="bold-700 info-color">{{lunge.serviceName}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Location</td>
+    <td class="bold-700 info-color">{{lunge.location}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Date</td>
+    <td class="bold-700 info-color">{{lunge.appointmentDate}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Time</td>
+    <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
+  </tr>
+</table>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500 justify-text">Please note that your appointment is not finalized until you click the <span class="bold-700">Confirm Appointment</span> button below.
+      If you need to
+      reschedule, you can click the <span class="bold-700">Reschedule Appointment</span> button below to select a new date and time. You
+      can also cancel the
+      appointment up to 24 hours prior to the scheduled time by clicking the <span class="bold-700">Cancel Appointment</span> button.</td>
+  </tr>
+</table>
+<table class="table-padding shrunk-font-size fit-content align-center">
+  <tr class="action-buttons no-wrap-text align-center">
+    <td> {{> button type='primary' url=lunge.confirmLink title='Confirm Appointment'}}</td>
+    <td> {{> button type='secondary' url=lunge.rescheduleLink title='Reschedule Appointment'}}</td>
+    <td> {{> button type='warn' url=lunge.cancelLink title='Cancel Appointment'}}</td>
+  </tr>
+</table>
