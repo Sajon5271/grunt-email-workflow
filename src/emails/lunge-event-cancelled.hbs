@@ -1,0 +1,32 @@
+---
+layout: lunge.hbs
+subject: Event Cancelled
+---
+<span class="preheader">An event you were invited to was cancelled.</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">The event with the following details has been cancelled:
+    </td>
+  </tr>
+</table>
+<table class="table-padding fit-content info-table">
+  <tr>
+    <td class="bold-400 medium-emphasis">Event name</td>
+    <td class="bold-700 info-color">{{lunge.eventName}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Category</td>
+    <td class="bold-700 info-color">{{lunge.eventCategory}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Date</td>
+    <td class="bold-700 info-color">{{lunge.eventDate}}</td>
+  </tr>
+  <tr>
+    <td class="bold-400 medium-emphasis">Time</td>
+    <td class="bold-700 info-color">{{lunge.eventStartTime}} to {{lunge.eventEndTime}}</td>
+  </tr>
+</table>
