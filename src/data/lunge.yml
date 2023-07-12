@@ -16,8 +16,13 @@ autoRescheduleAppointment: '{{autoRescheduleAppointment}}'
 appointmentCacellationReasonEndpoint: '{{appointmentCacellationReasonEndpoint}}'
 passwordResetLink: '{{passwordResetLink}}'
 
+updatedPasswordResetLink: '{{EmailVerification.PageUrl}}'
+updatedFirstNameForPasswordReset: '{{CreatedUser.FirstName}}'
+
 eventName: '{{eventName}}'
 eventCategory: '{{eventCategory}}'
 eventDate: '{{eventDate}}'
 eventStartTime: '{{eventStartTime}}'
 eventEndTime: '{{eventEndTime}}'
+
+TwoFactorCode: '{{TwoFactorCode}}'

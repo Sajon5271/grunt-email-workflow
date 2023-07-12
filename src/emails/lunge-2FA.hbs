@@ -1,0 +1,25 @@
+---
+layout: lunge.hbs
+subject: Password reset
+---
+<span class="preheader">Your two-factor authentication code.</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Hello,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">
+      Here is your verification code for Lunge Zürich. This code will expire within 1 minute.
+    </td>
+  </tr>
+  <tr>
+    <td class="align-center big-font-size py-10">
+      {{lunge.TwoFactorCode}}
+    </td>
+  </tr>
+  <tr>
+    <td class="bold-500 justify-text">
+      Please don't share the code with anyone.
+    </td>
+  </tr>
+</table>
