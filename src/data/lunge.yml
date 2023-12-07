@@ -20,9 +20,15 @@ updatedPasswordResetLink: '{{EmailVerification.PageUrl}}'
 updatedFirstNameForPasswordReset: '{{CreatedUser.FirstName}}'
 
 eventName: '{{eventName}}'
-eventCategory: '{{eventCategory}}'
+eventCategory: '{{category}}'
 eventDate: '{{eventDate}}'
 eventStartTime: '{{eventStartTime}}'
 eventEndTime: '{{eventEndTime}}'
 
 TwoFactorCode: '{{TwoFactorCode}}'
+
+generalTemplateSubject: '{{generalTemplateSubject}}'
+generalTemplateBody1: '{{generalTemplateBody1}}'
+generalTemplateBody2: '{{generalTemplateBody2}}'
+generalTemplateBody3: '{{generalTemplateBody3}}'
+generalTemplateBodyLink: '{{generalTemplateBodyLink}}'
