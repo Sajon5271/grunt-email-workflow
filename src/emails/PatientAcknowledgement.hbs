@@ -1,6 +1,6 @@
 ---
 layout: lunge.hbs
-subject: Booking Confirmation
+subject: Appointment request received
 ---
 <span class="preheader">An Appointment has been requested.</span>
 <table class="table-padding default-font-size">
@@ -12,34 +12,46 @@ subject: Booking Confirmation
     </td>
   </tr>
 </table>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.firstname}}</span>,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Bei LUNGE ZÜRICH wurde eine Buchungsanfrage mit folgenden: 
+    </td>
+  </tr>
+</table>
 <table class="table-padding fit-content info-table">
   <tr>
-    <td class="bold-400 medium-emphasis">Patient name</td>
+    <td class="bold-400 medium-emphasis">Patient name / Angaben gestellt</td>
     <td class="bold-700 info-color">{{lunge.patientName}}</td>
   </tr>
   <tr>
-    <td class="bold-400 medium-emphasis">Category of Consultation</td>
+    <td class="bold-400 medium-emphasis">Category of Consultation / Dienstleistung</td>
     <td class="bold-700 info-color">{{lunge.consultationCategory}}</td>
   </tr>
   <tr>
-    <td class="bold-400 medium-emphasis">Service</td>
+    <td class="bold-400 medium-emphasis">Service / Dienst</td>
     <td class="bold-700 info-color">{{lunge.serviceName}}</td>
   </tr>
   <tr>
-    <td class="bold-400 medium-emphasis">Location</td>
+    <td class="bold-400 medium-emphasis">Location / Terminort</td>
     <td class="bold-700 info-color">{{lunge.location}}</td>
   </tr>
   <tr>
-    <td class="bold-400 medium-emphasis">Date</td>
+    <td class="bold-400 medium-emphasis">Date / Datum</td>
     <td class="bold-700 info-color">{{lunge.appointmentDate}}</td>
   </tr>
   <tr>
-    <td class="bold-400 medium-emphasis">Time</td>
+    <td class="bold-400 medium-emphasis">Time / Terminfenster</td>
     <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
   </tr>
 </table>
 <table class="table-padding default-font-size">
   <tr>
     <td class="bold-500 justify-text">Your booking request will be confirmed via email.</td>
+  </tr>
+  <tr>
+    <td class="bold-500 justify-text">Ihre Buchungsanfrage wird per E-Mail bestätigt.</td>
   </tr>
 </table>
