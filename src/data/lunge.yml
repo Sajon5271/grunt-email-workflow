@@ -10,7 +10,7 @@ appointmentDate: '{{appointmentDate}}'
 rescheduleLink: '{{rescheduleLink}}'
 cancelLink: '{{cancelLink}}'
 confirmLink: '{{confirmLink}}'
-setPasswordLink: '{{setPasswordLink}}'
+setPasswordLink: '{{AccountActivationUrl}}'
 
 autoRescheduleAppointment: '{{autoRescheduleAppointment}}'
 appointmentCacellationReasonEndpoint: '{{appointmentCacellationReasonEndpoint}}'
