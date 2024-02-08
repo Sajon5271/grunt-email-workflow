@@ -5,37 +5,20 @@ subject: Event Updated
 <span class="preheader">An event you were invited to was updated.</span>
 <table class="table-padding default-font-size">
   <tr>
-    <td class="bold-500">Dear <span class="bold-700">{{lunge.name}}</span>,</td>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.name}}</span>,</td>
   </tr>
   <tr>
-    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.name}}</span>,</td>
+    <td class="bold-500 pt-16 justify-text">
+      Die Angaben zu Deiner bevorstehenden Sitzung wurden aktualisiert:
+    </td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16">Dear <span class="bold-700">{{lunge.name}}</span>,</td>
   </tr>
   <tr>
     <td class="bold-500 pt-16 justify-text">The details to your upcoming event has been updated with the following
       details:
     </td>
   </tr>
-  <tr>
-    <td class="bold-500 justify-text">
-      Die Angaben zu Deiner bevorstehenden Sitzung wurden aktualisiert:
-    </td>
-  </tr>
 </table>
-<table class="table-padding fit-content info-table">
-  <tr>
-    <td class="bold-400 medium-emphasis">Event name / Sitzungsname</td>
-    <td class="bold-700 info-color">{{lunge.eventName}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Category / Thema</td>
-    <td class="bold-700 info-color">{{lunge.eventCategory}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Date / Datum</td>
-    <td class="bold-700 info-color">{{lunge.eventDate}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Time / Terminfenster</td>
-    <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
-  </tr>
-</table>
+{{>event-details}}

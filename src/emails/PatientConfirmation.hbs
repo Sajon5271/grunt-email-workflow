@@ -5,10 +5,15 @@ subject: Booking Confirmation
 <span class="preheader">An Appointment has been requested.</span>
 <table class="table-padding default-font-size">
   <tr>
-    <td class="bold-500">Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.firstname}}</span>,</td>
   </tr>
   <tr>
-    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.firstname}}</span>,</td>
+    <td class="bold-500 pt-16 justify-text">Vielen Dank, dass Sie einen Termin mit uns vereinbart haben. Wir möchten Ihnen bestätigen, dass Ihr Termin mit folgenden Angaben
+      vereinbart wurde:
+    </td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16">Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
   </tr>
   <tr>
     <td class="bold-500 pt-16 justify-text">Thank you for scheduling an appointment with us. We would like to confirm
@@ -16,39 +21,16 @@ subject: Booking Confirmation
       appointment has been scheduled with the following details:
     </td>
   </tr>
+</table>
+{{>appointment-info}}
+<table class="table-padding default-font-size">
   <tr>
-    <td class="bold-500 justify-text">Vielen Dank, dass Sie einen Termin mit uns vereinbart haben. Wir möchten Ihnen bestätigen, dass Ihr Termin mit folgenden Angaben
-      vereinbart wurde:
+    <td class="bold-500 justify-text">
+      Wenn Sie den Termin verschieben müssen, können Sie unten auf die Schaltfläche <span class="bold-700">Termin verschieben</span> klicken, um ein
+      neues Datum und eine neue Uhrzeit auszuwählen. Sie können den Termin auch bis zu 24 Stunden vor dem geplanten
+      Zeitpunkt stornieren, indem Sie auf die Schaltfläche <span class="bold-700">Termin absagen</span> klicken.
     </td>
   </tr>
-</table>
-<table class="table-padding fit-content info-table">
-  <tr>
-    <td class="bold-400 medium-emphasis">Patient name / Angaben gestellt</td>
-    <td class="bold-700 info-color">{{lunge.patientName}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Category of Consultation / Dienstleistung</td>
-    <td class="bold-700 info-color">{{lunge.consultationCategory}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Service / Dienst</td>
-    <td class="bold-700 info-color">{{lunge.serviceName}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Location / Terminort</td>
-    <td class="bold-700 info-color">{{lunge.location}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Date / Datum</td>
-    <td class="bold-700 info-color">{{lunge.appointmentDate}}</td>
-  </tr>
-  <tr>
-    <td class="bold-400 medium-emphasis">Time / Terminfenster</td>
-    <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
-  </tr>
-</table>
-<table class="table-padding default-font-size">
   <tr>
     <td class="bold-500 justify-text">
       If you need to reschedule, you can click the <span class="bold-700">Reschedule Appointment</span> button below
@@ -58,17 +40,5 @@ subject: Booking Confirmation
       button.
     </td>
   </tr>
-  <tr>
-    <td class="bold-500 justify-text">
-      Wenn Sie den Termin verschieben müssen, können Sie unten auf die Schaltfläche <span class="bold-700">Termin verschieben</span> klicken, um ein
-      neues Datum und eine neue Uhrzeit auszuwählen. Sie können den Termin auch bis zu 24 Stunden vor dem geplanten
-      Zeitpunkt stornieren, indem Sie auf die Schaltfläche <span class="bold-700">Termin absagen</span> klicken.
-    </td>
-  </tr>
 </table>
-<table class="table-padding shrunk-font-size fit-content align-center">
-  <tr class="action-buttons no-wrap-text align-center">
-    <td> {{> button type='secondary' url=lunge.rescheduleLink title='Reschedule Appointment <br/>Termin verschieben'}}</td>
-    <td> {{> button type='warn' url=lunge.cancelLink title='Cancel Appointment <br/>Termin absagen'}}</td>
-  </tr>
-</table>
+{{>two-buttons}}
