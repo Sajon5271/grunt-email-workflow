@@ -13,7 +13,7 @@ confirmLink: '{{confirmLink}}'
 setPasswordLink: '{{AccountActivationUrl}}'
 
 autoRescheduleAppointment: '{{autoRescheduleAppointment}}'
-appointmentCacellationReasonEndpoint: '{{appointmentCacellationReasonEndpoint}}'
+appointmentCancellationReasonEndpoint: '{{appointmentCancellationReasonEndpoint}}'
 passwordResetLink: '{{passwordResetLink}}'
 
 updatedPasswordResetLink: '{{EmailVerification.PageUrl}}'
