@@ -17,7 +17,7 @@ appointmentCancellationReasonEndpoint: '{{appointmentCancellationReasonEndpoint}
 passwordResetLink: '{{passwordResetLink}}'
 
 updatedPasswordResetLink: '{{EmailVerification.PageUrl}}'
-updatedFirstNameForPasswordReset: '{{CreatedUser.FirstName}}'
+updatedFirstNameForPasswordReset: '{{User.DisplayName}}'
 
 eventName: '{{eventName}}'
 eventCategory: '{{category}}'
