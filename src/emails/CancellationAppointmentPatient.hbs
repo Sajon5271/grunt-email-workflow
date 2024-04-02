@@ -5,14 +5,10 @@ subject: Booking Cancelled
 <span class="preheader">Your booking has been cancelled</span>
 <table class="table-padding default-font-size">
     <tr>
-    <td class="bold-500">Grüezi  / Dear <span class="bold-700">{{lunge.firstname}}</span>,</td>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.firstname}}</span>,</td>
   </tr>
   <tr>
     <td class="bold-500 pt-16 justify-text">Ihre Termin bei LUNGE ZÜRICH mit folgenden Angaben wurde storniert:
-    </td>
-  </tr>
-  <tr>
-    <td class="bold-500 pt-16 justify-text">Your booking at Lunge Zurich with the following details has been cancelled:
     </td>
   </tr>
 </table>
@@ -21,13 +17,10 @@ subject: Booking Cancelled
   <tr>
     <td class="bold-500 justify-text">Wenn Sie möchten, dass Ihnen automatisch ein neuer Termin zugewiesen wird, klicken Sie bitte auf <span class="bold-700">Ja</span>. Wenn Sie nicht möchten, dass Ihnen ein neuer Termin zugewiesen wird, klicken Sie bitte auf <span class="bold-700">Nein</span></td>
   </tr>
-  <tr>
-    <td class="bold-500 justify-text">If you want a new slot to be allocated to you automatically, please click <span class="bold-700">Yes</span>. If you don't want another slot to be allocated for you, please click <span class="bold-700">No</span></td>
-  </tr>
 </table>
 <table class="table-padding shrunk-font-size fit-content align-center">
   <tr class="action-buttons no-wrap-text align-center">
-    <td> {{> button type='primary' url=lunge.autoRescheduleAppointment title='Ja<br/>Yes'}}</td>
-    <td> {{> button type='secondary' url=lunge.appointmentCancellationReasonEndpoint title='Nein<br/>No'}}</td>
+    <td> {{> button type='primary' url=lunge.autoRescheduleAppointment title='Ja'}}</td>
+    <td> {{> button type='secondary' url=lunge.appointmentCancellationReasonEndpoint title='Nein'}}</td>
   </tr>
 </table>
