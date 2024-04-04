@@ -1,0 +1,21 @@
+---
+layout: lunge.hbs
+subject: Password reset
+---
+<span class="preheader">Appointment Reminder</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.patientName}}</span>,</td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Ihr Termin bei LUNGE ZÜRICH wurde mit folgenden Details verschoben: 
+    </td>
+  </tr>
+</table>
+{{>appointment-info}}
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500 justify-text pt-16">Wenn Sie den Termin verschieben müssen, können Sie unten auf die Schaltfläche <span class="bold-700">Termin verschieben</span> klicken, um ein neues Datum und eine neue Uhrzeit auszuwählen. Sie können den Termin auch bis zu 24 Stunden vor dem geplanten Zeitpunkt stornieren, indem Sie auf die Schaltfläche <span class="bold-700">Termin absagen</span> klicken.</td>
+  </tr>
+</table>
+{{>two-buttons}}

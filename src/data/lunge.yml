@@ -32,3 +32,5 @@ generalTemplateBody1: '{{generalTemplateBody1}}'
 generalTemplateBody2: '{{generalTemplateBody2}}'
 generalTemplateBody3: '{{generalTemplateBody3}}'
 generalTemplateBodyLink: '{{generalTemplateBodyLink}}'
+
+patientNameForReschedule: '{{}}'
