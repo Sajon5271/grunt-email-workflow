@@ -3,24 +3,24 @@
     <td class="bold-400 medium-emphasis">Patientenname</td>
     <td class="bold-700 info-color">{{lunge.patientName}}</td>
   </tr>
-  <tr>
+  {{!-- <tr>
     <td class="bold-400 medium-emphasis">Dienstleistung</td>
     <td class="bold-700 info-color">{{lunge.consultationCategory}}</td>
-  </tr>
+  </tr> --}}
   <tr>
-    <td class="bold-400 medium-emphasis">Dienst</td>
+    <td class="bold-400 medium-emphasis">Dienstleistung</td>
     <td class="bold-700 info-color">{{lunge.serviceName}}</td>
   </tr>
   <tr>
     <td class="bold-400 medium-emphasis">Terminort</td>
     <td class="bold-700 info-color">{{lunge.location}}</td>
   </tr>
-  <tr>
+  {{!-- <tr>
     <td class="bold-400 medium-emphasis">Datum</td>
     <td class="bold-700 info-color">{{lunge.appointmentDate}}</td>
-  </tr>
+  </tr> --}}
   <tr>
     <td class="bold-400 medium-emphasis">Terminfenster</td>
-    <td class="bold-700 info-color">{{lunge.appointmentTime}}</td>
+    <td class="bold-700 info-color">{{lunge.appointmentDate}}, {{lunge.appointmentTime}}</td>
   </tr>
 </table>
