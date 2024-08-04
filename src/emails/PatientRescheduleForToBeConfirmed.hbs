@@ -1,0 +1,24 @@
+---
+layout: lunge.hbs
+subject: Booking Confirmation
+---
+<span class="preheader">An Appointment has been requested.</span>
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500">Grüezi <span class="bold-700">{{lunge.firstname}}</span></td>
+  </tr>
+  <tr>
+    <td class="bold-500 pt-16 justify-text">Ihr Termin bei LUNGE ZÜRICH wurde mit folgenden Details verschoben:
+    </td>
+  </tr>
+</table>
+{{>appointment-info}}
+<table class="table-padding default-font-size">
+  <tr>
+    <td class="bold-500 justify-text">
+      Wenn Sie den Termin verschieben möchten, können Sie unten auf die Schaltfläche <span class="bold-700">Termin verschieben</span> klicken, um ein
+      neues Datum und eine neue Uhrzeit auszuwählen.
+    </td>
+  </tr>
+</table>
+{{>three-buttons}}
