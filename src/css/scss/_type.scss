@@ -7,7 +7,7 @@ h2,
 h3,
 h4 {
   color: $font-color !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 400;
   line-height: 1.4em;
   margin: 0;
@@ -27,13 +27,13 @@ h3 {
 }
 h4 {
   font-size: 14px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 p,
 ul,
 ol {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -59,4 +59,120 @@ pre,
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+.bold-700 {
+  font-weight: 700;
+}
+.bold-400 {
+  font-weight: 400;
+}
+
+.default-font-size {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.7%;
+  color: #4d5052;
+}
+.big-font-size {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.7%;
+  color: #4d5052;
+}
+.shrunk-font-size {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7%;
+  color: #4d5052;
+}
+
+.disabled-text {
+  color: #979797;
+}
+
+.subtitle-text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.7%;
+  color: #4d5052;
+  text-align: justify;
+}
+
+.table-padding {
+  padding: 10px;
+}
+
+.px-10 {
+  padding: 0px 10px;
+}
+.py-10 {
+  padding: 10px 0px;
+}
+.py-16 {
+  padding: 16px 0px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+.info-table {
+  td {
+    padding: 4px 10px 4px 0px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+}
+
+.medium-emphasis {
+  color: #616161;
+}
+
+.info-color {
+  color: #303233;
+}
+
+.px-12 {
+  padding: 0px 12px;
+}
+
+.action-buttons > td {
+  padding: 0px 12px;
+}
+
+.no-wrap-text {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .action-buttons > td {
+    float: left;
+  }
+  .action-buttons > td:nth-child(2) {
+    clear: both;
+  }
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.font-18px {
+  font-size: 18px;
 }
