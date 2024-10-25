@@ -1,13 +1,13 @@
 ---
 layout: default.hbs
-subject: Branded transaction email example
+subject: Activate Account
 ---
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<span class="preheader">Activate your account</span>
 <div class="header">
   <table>
     <tr>
       <td class="align-center">
-        <a href="http://www.mailgun.com"><img
+        <a href="{{webs4.frontend_link}}"><img
             src="https://res.cloudinary.com/dk3znnsme/image/upload/v1729837856/4webs_IT_Logo_jhyghr.png" height="50"
             alt="Mailgun"></a>
       </td>
@@ -29,12 +29,3 @@ subject: Branded transaction email example
     </td>
   </tr>
 </table>
-<div class="footer">
-  <table>
-    <tr>
-      <td class="align-center">
-        <p>{{> follow_lee }}</p>
-      </td>
-    </tr>
-  </table>
-</div>
