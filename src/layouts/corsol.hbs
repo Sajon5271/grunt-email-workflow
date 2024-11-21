@@ -1,23 +1,53 @@
 <!doctype html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{ subject }}</title>
-<link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>{{ subject }}</title>
+	<link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-<table class="body">
-	<tr>
-		<td></td>
-		<td class="container">
-			<div class="content">{{ body }}</div>
-		</td>
-		<td></td>
-	</tr>
-</table>
-
+	<table class="body">
+		<tr>
+			<td></td>
+			<td class="container">
+				<div class="content">
+					{{ body }}
+					{{> divider}}
+					<div>
+						In the event that this was not meant for you, please let us know at <a
+							href="mailto:swisslifenetwork@swisslife.com" class="mail-link bold-700">swisslifenetwork@swisslife.com</a>
+						by
+						sending an E-mail.
+					</div>
+					{{> divider}}
+					<table>
+						<tr>
+							<td class="serif-font">Swiss Life<br />General Guisan-Quai 40 <br />Postfach, CH-8022
+								Zürich<br />Switzerland.</td>
+							<td class="serif-font align-right"><span class="disabled-text">Have any query?</span><br><a
+									href="mailto:swisslifenetwork@swisslife.com" class="mail-link">swisslifenetwork@swisslife.com</a></td>
+						</tr>
+						<tr>
+							<td class="serif-font">Phone +41 43 284 77 77</td>
+						</tr>
+					</table>
+					{{> divider}}
+					<table class="fit-content align-center border-space-x-32">
+						<tr>
+							<td class="font-italic bold-300 shrunk-font-size">Sent by Swiss Life</td>
+							<td class="font-italic bold-300 shrunk-font-size">Swiss Life LTD, P. O. Box 8022, Zurich, Switzerland</td>
+							<td class="font-italic bold-300 shrunk-font-size">Privacy Policy</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+			<td></td>
+		</tr>
+	</table>
 </body>
+
 </html>

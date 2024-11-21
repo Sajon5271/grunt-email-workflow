@@ -60,7 +60,12 @@ pre,
   -moz-hyphens: auto;
   hyphens: auto;
 }
-
+.font-italic{
+  font-style: italic;
+}
+.bold-300 {
+  font-weight: 300;
+}
 .bold-500 {
   font-weight: 500;
 }

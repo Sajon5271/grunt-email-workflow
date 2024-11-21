@@ -1,7 +1,6 @@
-profile_pic : 'Hello'
+profile_pic: 'Hello'
 messages:
-  - 
-    msg: 'New Msg'
+  - msg: 'New Msg'
     sender: 'Hola'
     time: '11:45 AM'
     sender_inital: 'H'
@@ -9,8 +8,10 @@ messages:
     files:
       - 'Hello'
       - 'Bollo'
-  - 
-    msg: '2nd Msg'
+  - msg: '2nd Msg'
     sender: 'Vola'
     time: '11:55 AM'
     sender_inital: 'VO'
+
+messagesHtml: '{{messagesHtml}}'
+gotoConversationUrl: '{{gotoConversationUrl}}'

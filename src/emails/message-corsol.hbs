@@ -14,45 +14,11 @@ subject: Corsol Admin sent a message
     <td class="pt-16 bold-700">Corsol Admin sent a message to you</td>
   </tr>
 </table>
-<table class="corsol-main py-24 pt-10 default-font-size border-space-8">
-  {{#each corsol.messages}}
-  <tr>
-    <td class="mt-8 p-16 message">
-      <table>
-        <tr>
-          <td class="circle bg-white square-36 center-text bold-700 vertical-center">
-            {{#if this.profile_pic}}
-            <img src={{this.profile_pic}} />
-            {{else}}
-            <span>
-              {{this.sender_inital}}
-            </span>
-            {{/if}}
-          </td>
-          <td class="vertical-center bold-700 message-sender">
-            <span>{{this.sender}}
-              <span class="dot"></span>
-              <span class="shrunk-font-size disabled-text bold-400">{{this.time}}</span>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="medium-emphasis message-content">{{this.msg}}<br />
-            {{#each this.files}}
-            <span>[File]</span>
-            {{/each}}
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  {{/each}}
-</table>
-<table>
+{{corsol.messagesHtml}}
+<table class="fit-content align-center">
   <tr>
     <td class="center-text">
-      {{> button type='primary' title='GO TO CONVERSATION'}}
+      {{> button type='primary' title='GO TO CONVERSATION' url=corsol.gotoConversationUrl}}
     </td>
   </tr>
 </table>
