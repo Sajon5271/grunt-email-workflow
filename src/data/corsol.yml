@@ -1,0 +1,16 @@
+profile_pic : 'Hello'
+messages:
+  - 
+    msg: 'New Msg'
+    sender: 'Hola'
+    time: '11:45 AM'
+    sender_inital: 'H'
+    profile_pic: '../src/img/mailgun.png'
+    files:
+      - 'Hello'
+      - 'Bollo'
+  - 
+    msg: '2nd Msg'
+    sender: 'Vola'
+    time: '11:55 AM'
+    sender_inital: 'VO'
