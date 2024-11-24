@@ -1,4 +1,5 @@
 profile_pic: 'Hello'
+sender: '{{sender}}'
 messages:
   - msg: 'New Msg'
     sender: 'Hola'

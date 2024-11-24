@@ -50,7 +50,7 @@
   padding-right: 8px;
   padding-bottom: 8px;
 }
-.message-content{
+.message-content {
   padding-left: 16px;
   padding-right: 8px;
 }
@@ -84,7 +84,6 @@
   text-align: center;
 }
 
-
 .dot {
   display: inline-block;
   width: 4px;
@@ -95,22 +94,22 @@
   margin-right: 6px;
 }
 
-.border-space-8{
+.border-space-8 {
   border-spacing: 8px;
 }
-.border-space-x-32{
+.border-space-x-32 {
   border-spacing: 32px 0;
 }
 
-.mail-link{
+.mail-link {
   text-decoration: none;
 }
 
-.serif-font{
+.serif-font {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.font-italic{
+.font-italic {
   font-style: italic;
 }
 .bold-300 {
@@ -155,4 +154,18 @@
 
 .info-color {
   color: #303233;
+}
+
+a {
+  svg.social-link {
+    fill: #9b9b9b;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+}
+
+
+.fill-left{
+  margin-left: auto;
 }

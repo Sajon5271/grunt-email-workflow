@@ -2,16 +2,16 @@
 layout: corsol.hbs
 subject: Corsol Admin sent a message
 ---
-<span class="preheader">Corsol Admin sent a message.</span>
+<span class="preheader">{{corsol.sender}} sent a message.</span>
 <table class="corsol-main px-10 pt-10 default-font-size">
   <tr>
     <td>Hello,</td>
   </tr>
   <tr>
-    <td class="pt-16">Greetings from EBLife. Corsol technical admin is trying to reach you</td>
+    <td class="pt-16">Greetings from EBLife. {{corsol.sender}} is trying to reach you</td>
   </tr>
   <tr>
-    <td class="pt-16 bold-700">Corsol Admin sent a message to you</td>
+    <td class="pt-16 bold-700">{{corsol.sender}} sent a message to you</td>
   </tr>
 </table>
 {{corsol.messagesHtml}}
