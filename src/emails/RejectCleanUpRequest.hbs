@@ -1,0 +1,27 @@
+---
+layout: corsol.hbs
+subject: A cleanup request has been rejected
+---
+<span class="preheader">A cleanup request has been rejected</span>
+<table class="corsol-main px-10 pt-10 default-font-size">
+  <tr>
+    <td>Hello,</td>
+  </tr>
+  <tr>
+    <td class="py-16">Greetings from EBLife. A technical admin has rejected your submitted cleanup. You can checkout the
+      cleanup here: </td>
+  </tr>
+</table>
+<table class="fit-content align-center">
+  <tr>
+    <td class="center-text">
+      {{> button type='primary' title='Go to Cleanup' align='center' url=corsol.gotoCleanupRequest style=''}}
+    </td>
+  </tr>
+  <tr>
+    <td class="center-text">or use this link: </td>
+  </tr>
+  <tr>
+    <td class="center-text"><a href={{corsol.gotoCleanupRequest}}>{{corsol.gotoCleanupRequest}}</a></td>
+  </tr>
+</table>

@@ -16,3 +16,4 @@ messages:
 
 messagesHtml: '{{messagesHtml}}'
 gotoConversationUrl: '{{gotoConversationUrl}}'
+gotoCleanupRequest: '{{gotoCleanupRequest}}'
