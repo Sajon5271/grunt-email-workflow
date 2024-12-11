@@ -1,0 +1,27 @@
+---
+layout: corsol.hbs
+subject: A Network Partner has delivered project attribute data to SwissLife
+---
+<span class="preheader">A Network Partner has delivered project attribute data to SwissLife</span>
+<table class="corsol-main px-10 pt-10 default-font-size">
+  <tr>
+    <td>Hello,</td>
+  </tr>
+  <tr>
+    <td class="py-16">Greetings from EBLife. A Network Partner has submitted data for a PLA Data Order to SwissLife. You can check it out here: </td>
+  </tr>
+</table>
+<table class="fit-content align-center">
+  <tr>
+    <td class="center-text">
+      {{> button type='primary' title='Go to PLA Data Order Submission' align='center'
+      url=corsol.gotoPlaDataOrderSubmission style=''}}
+    </td>
+  </tr>
+  <tr>
+    <td class="center-text">or use this link: </td>
+  </tr>
+  <tr>
+    <td class="center-text"><a href={{corsol.gotoPlaDataOrderSubmission}}>{{corsol.gotoPlaDataOrderSubmission}}</a></td>
+  </tr>
+</table>

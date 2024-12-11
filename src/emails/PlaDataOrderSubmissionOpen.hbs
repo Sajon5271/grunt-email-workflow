@@ -1,0 +1,28 @@
+---
+layout: corsol.hbs
+subject: A Pla Data Order is available for data submission
+---
+<span class="preheader">A Pla Data Order is available for data submission</span>
+<table class="corsol-main px-10 pt-10 default-font-size">
+  <tr>
+    <td>Hello,</td>
+  </tr>
+  <tr>
+    <td class="py-16">Greetings from EBLife. A technical admin has updated a PLA Data Order which is now available for
+      data submission. You can go to the submission page here: </td>
+  </tr>
+</table>
+<table class="fit-content align-center">
+  <tr>
+    <td class="center-text">
+      {{> button type='primary' title='Go to PLA Data Order Submission' align='center'
+      url=corsol.gotoPlaDataOrderSubmission style=''}}
+    </td>
+  </tr>
+  <tr>
+    <td class="center-text">or use this link: </td>
+  </tr>
+  <tr>
+    <td class="center-text"><a href={{corsol.gotoPlaDataOrderSubmission}}>{{corsol.gotoPlaDataOrderSubmission}}</a></td>
+  </tr>
+</table>
