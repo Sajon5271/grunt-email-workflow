@@ -1,0 +1,3 @@
+frontend_link: '{{frontend_link}}'
+userName: '{{userName}}'
+verificationCode: '{{verificationCode}}'
