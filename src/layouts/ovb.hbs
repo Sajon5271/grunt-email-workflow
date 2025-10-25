@@ -12,46 +12,63 @@
 
   <table class="body">
     <tr>
-      <td></td>
       <td class="container">
         <div class="content">
           <div class="header default-font-size">
             <table>
               <tr>
-                <td class="align-center pt-16"><a href=""><img src="https://az-cdn.selise.biz/selisecdn/cdn/lunge/assets/lung-logos/logo-primary.png" height="50"
+                <td class="align-center"><a href=""><img
+                      src="https://az-cdn.selise.biz/selisecdn/cdn/lunge/assets/lung-logos/logo-primary.png" height="50"
                       alt="[Lunge Zurich]"></a>
                 </td>
               </tr>
             </table>
           </div>
+          {{> divider}}
           {{ body }}
           <table class="px-10 mt-24">
             <tr>
-              <td class="subtitle-text">This e-mail and any attached files may be confidential in nature. If you
-                received this
-                e-mail in error, we ask you not to distribute this message any further or to copy it, forward it or make
-                use of it
-                in any other way. Kindly notify the sender immidiately by reply email if you received this message in
-                error and
-                destroy this message so that it is completely deleted from your system. Many thanks.</td>
+              <td class="large-caption align-center neutral-text-color">If you received this email by mistake and are
+                not the intended recipient, please ignore it.You don’t need to take any further action.</td>
             </tr>
           </table>
           {{> divider}}
-          <table class="default-font-size">
-            <tr class="bold-500">
-              <td>Contact: 044 268 20 00 <br />
-                044 268 20 20</td>
-              <td class="align-right">The Circle 62<br />
-                8058 Zürich Airport, Swirzerland</td>
+          <table>
+            <tr>
+              <td class="large-caption align-center neutral-text-color"> This email was sent to {{ovb.recipientEmail}}
+              </td>
             </tr>
             <tr>
-              <td class="pt-24 bold-500">Email: <a class=" bold-400"
-                  href="mailto:beratung@lunge-zuerich.ch">beratung@lunge-zuerich.ch</a></td>
+              <td class="large-caption align-center neutral-text-color pt-4">
+                <span class="font-bold">OVB AG</span><br />
+                Downtown Conference Center, 123 Hauptstraße, Berlin.
+              </td>
+            </tr>
+            <tr>
+              <td class="small-caption align-center neutral-text-color pt-4">
+                The information contained in this message is confidential or protected by law. If you are not the
+                intended recipient, please contact the sender and delete this message. Any unauthorised copying of this
+                message or unauthorised distribution of the information contained herein is prohibited.
+              </td>
             </tr>
           </table>
         </div>
       </td>
-      <td></td>
+    </tr>
+    <tr>
+      <td class="container">
+        <div class="footer">
+          <table class="mx-auto">
+            <tr>
+              <td class="p-0">About OVB</td>
+              <td class="p-0">Contact Us</td>
+              <td class="p-0">Help</td>
+              <td class="p-0">Privacy</td>
+              <td class="p-0">Unsubscribe</td>
+            </tr>
+          </table>
+        </div>
+      </td>
     </tr>
   </table>
 

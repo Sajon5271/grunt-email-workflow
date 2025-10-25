@@ -1,0 +1,54 @@
+// Spacing scale (like Tailwind's)
+$spacing-scale: (
+  0: 0px,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  8: 32px,
+  10: 40px,
+  12: 48px,
+  16: 64px,
+);
+
+// Helper mixin for both margin and padding
+@mixin generate-spacing-utilities($prefix, $property) {
+  @each $key, $value in $spacing-scale {
+    // all sides
+    .#{$prefix}-#{$key} {
+      #{$property}: #{$value};
+    }
+
+    // top, right, bottom, left
+    .#{$prefix}t-#{$key} {
+      #{$property}-top: #{$value};
+    }
+    .#{$prefix}r-#{$key} {
+      #{$property}-right: #{$value};
+    }
+    .#{$prefix}b-#{$key} {
+      #{$property}-bottom: #{$value};
+    }
+    .#{$prefix}l-#{$key} {
+      #{$property}-left: #{$value};
+    }
+
+    // x (left + right)
+    .#{$prefix}x-#{$key} {
+      #{$property}-left: #{$value};
+      #{$property}-right: #{$value};
+    }
+
+    // y (top + bottom)
+    .#{$prefix}y-#{$key} {
+      #{$property}-top: #{$value};
+      #{$property}-bottom: #{$value};
+    }
+  }
+}
+
+// Generate margin and padding utilities
+@include generate-spacing-utilities('m', 'margin');
+@include generate-spacing-utilities('p', 'padding');

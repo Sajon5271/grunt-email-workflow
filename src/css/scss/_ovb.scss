@@ -1,0 +1,57 @@
+.large-caption {
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px; /* 140% */
+}
+.small-caption {
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.12px;
+}
+
+.neutral-text-color {
+  color: #666;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.footer {
+  background: #003366;
+  width: 100%;
+  color: white;
+  border-top: 10px solid #10919a;
+  padding: 36px 12px;
+  > table {
+    width: fit-content;
+    td {
+      padding-left: 16px;
+      padding-right: 16px;
+      color: var(--Neutral-200, #ccc);
+      font-family: 'Stag Sans', Roboto, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 0.12px;
+    }
+
+    td:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
