@@ -14,8 +14,36 @@
   letter-spacing: 0.12px;
 }
 
+.subtitle-2 {
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.4px; /* 110% */
+}
+
+.large-body {
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
 .neutral-text-color {
   color: #666;
+}
+.high-emphasis-black-text {
+  color: #181818;
+}
+
+.very-high-emphasis-black {
+  color: #0f0f0f;
+}
+
+.appointment-icon {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .font-bold {
@@ -52,6 +80,59 @@
   width: 100%;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 .mx-auto {
   margin-inline: auto;
+}
+
+.appointment-info-table {
+  border-collapse: separate;
+  border-spacing: 0px 32px;
+  border: 1px solid #e5e5e5;
+  background: #fbfbfb;
+  margin-bottom: 24px;
+}
+
+.user-border {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #fbfbfb;
+}
+
+.ovb-anchor {
+  color: var(--State-Info, #2f80ed);
+  /* Regular Body */
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+.email-to-style {
+  color: var(--Neutral-500, #666);
+  font-family: 'Stag Sans', Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }

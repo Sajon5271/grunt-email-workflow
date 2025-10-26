@@ -1,1 +1,12 @@
-recipientEmail: "{{recipientEmail}}"
+recipientEmail: '{{recipientEmail}}'
+appointmentTitle: '{{appointmentTitle}}'
+appointmentDate: '{{appointmentDate}}'
+appointmentFromTime: '{{appointmentFromTime}}'
+appointmentToTime: '{{appointmentToTime}}'
+appointmentDurationMins: '{{appointmentDurationMins}}'
+appointmentDetails: '{{appointmentDetails}}'
+appointmentPerson1Name: '{{appointmentPerson1Name}}'
+appointmentPerson2Name: '{{appointmentPerson2Name}}'
+appointmentLocation: '{{appointmentLocation}}'
+appointmentLocationMapUrl: '{{appointmentLocationMapUrl}}'
+appointmentLink: '{{appointmentLink}}'

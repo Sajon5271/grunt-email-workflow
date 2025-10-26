@@ -1,0 +1,11 @@
+---
+layout: ovb.hbs
+subject: Appointment Rejected
+---
+<table>
+  <tr>
+    <td class="subtitle-2 high-emphasis-black-text">{{ovb.appointmentTitle}}: REJECTED</td>
+  </tr>
+</table>
+{{> divider}}
+{{> appointment-table inPerson=true rejectedClass="text-strikethrough"}}

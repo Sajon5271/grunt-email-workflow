@@ -1,0 +1,77 @@
+<table class="appointment-info-table">
+  <tr>
+    <td class="pl-6">
+      <img src="https://res.cloudinary.com/diiw8fknq/image/upload/v1761445734/calendar_pydjgc.png" alt="calendar-icon"
+        height="20" width="20" class="appointment-icon" />
+    </td>
+    <td class="large-body very-high-emphasis-black pr-6 pl-2 {{rejectedClass}}">
+      {{ovb.appointmentDate}} | {{ovb.appointmentFromTime}} - {{ovb.appointmentToTime}} <span
+        class="neutral-text-color">({{ovb.appointmentDurationMins}} Min)</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="pl-6">
+      <img src="https://res.cloudinary.com/diiw8fknq/image/upload/v1761445734/notepad-text_ac3tit.png"
+        alt="description-icon" height="20" width="20" class="appointment-icon" />
+    </td>
+    <td class="large-body very-high-emphasis-black pr-6 pl-2">
+      <div>Description</div>
+      <div class="pt-2 large-caption neutral-text-color">
+        {{ovb.appointmentDetails}}
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="pl-6">
+      <img src="https://res.cloudinary.com/diiw8fknq/image/upload/v1761445734/user-round-check_vfd9lg.png"
+        alt="description-icon" height="20" width="20" class="appointment-icon" />
+    </td>
+    <td class="large-body very-high-emphasis-black pr-6 pl-2">
+      <div>Participents</div>
+      <div class="pt-2 large-caption neutral-text-color">
+        <table class="w-fit">
+          <tr>
+            <td>
+              <div class="user-border p-2">{{ovb.appointmentPerson1Name}}</div>
+            </td>
+            <td class="pl-3">
+              <div class="user-border p-2">{{ovb.appointmentPerson2Name}}</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  {{#if inPerson}}
+  <tr>
+    <td class="pl-6">
+      <img src="https://res.cloudinary.com/diiw8fknq/image/upload/v1761445734/map-pin_qg36eb.png" alt="description-icon"
+        height="20" width="20" class="appointment-icon" />
+    </td>
+    <td class="large-body very-high-emphasis-black pr-6 pl-2">
+      <div>In-person meeting</div>
+      <div class="pt-2 large-caption neutral-text-color">
+        <table>
+          <tr>
+            <td>{{ovb.appointmentLocation}}</td>
+            <td class="align-right ovb-anchor"><a href="{{ovb.appointmentLocationMapUrl}}">View Location</a></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  {{else}}
+  <tr>
+    <td class="pl-6">
+      <img src="https://res.cloudinary.com/diiw8fknq/image/upload/v1761445734/laptop-minimal_ya5dik.png" alt="description-icon"
+        height="20" width="20" class="appointment-icon" />
+    </td>
+    <td class="large-body very-high-emphasis-black pr-6 pl-2">
+      <div>Online Meeting</div>
+      <div class="pt-2 large-caption neutral-text-color">
+       <a class="ovb-anchor" href="{{ovb.appointmentLink}}">{{ovb.appointmentLink}}</a>
+      </div>
+    </td>
+  </tr>
+  {{/if}}
+</table>
